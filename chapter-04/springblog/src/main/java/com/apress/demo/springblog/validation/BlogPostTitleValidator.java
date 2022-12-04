@@ -6,8 +6,7 @@ import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import org.thymeleaf.util.StringUtils;
 
-public record BlogPostTitleValidator(
-        PostService postService) implements ConstraintValidator<BlogPostTitleAlreadyExists, Post> {
+public record BlogPostTitleValidator(PostService postService) implements ConstraintValidator<BlogPostTitleAlreadyExists, Post> {
 
     @Override
     public void initialize(BlogPostTitleAlreadyExists constraintAnnotation) {

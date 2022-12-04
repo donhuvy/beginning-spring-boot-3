@@ -3,12 +3,10 @@ package com.apress.demo;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Siva
- */
 @Component
 @ConfigurationProperties(prefix = "jdbc")
 public class DataSourceConfig {
+
     private String driver;
     private String url;
     private String username;
@@ -50,5 +48,4 @@ public class DataSourceConfig {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }

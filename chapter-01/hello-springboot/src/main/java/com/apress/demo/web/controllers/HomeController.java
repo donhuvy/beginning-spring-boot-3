@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.apress.demo.web.controllers;
 
 import com.apress.demo.repositories.UserRepository;
@@ -9,12 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * @author Siva
- *
- */
 @Controller
 public class HomeController {
+
     @Autowired
     UserRepository userRepo;
 
@@ -23,4 +17,5 @@ public class HomeController {
         model.addAttribute("users", userRepo.findAll());
         return "index";
     }
+
 }

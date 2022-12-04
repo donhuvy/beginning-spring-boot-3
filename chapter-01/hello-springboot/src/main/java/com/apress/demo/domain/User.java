@@ -6,18 +6,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-/**
- * @author Siva
- */
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
 
     public User() {
+
     }
 
     public User(Integer id, String name) {
@@ -40,5 +39,4 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-
 }

@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 public class CommentRepository {
+
     private final Set<Post> posts = new CopyOnWriteArraySet<>();
 
     public void addPost(Post post) {

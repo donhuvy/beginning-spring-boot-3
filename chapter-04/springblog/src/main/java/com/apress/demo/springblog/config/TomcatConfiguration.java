@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class TomcatConfiguration {
+
     @Value("${server.port}")
     private int serverPort;
 
@@ -40,5 +41,6 @@ public class TomcatConfiguration {
         connector.setRedirectPort(serverPort);
         return connector;
     }
+
 }
 
