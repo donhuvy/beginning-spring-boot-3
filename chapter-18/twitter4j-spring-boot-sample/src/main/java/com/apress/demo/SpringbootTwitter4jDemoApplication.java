@@ -12,7 +12,6 @@ import twitter4j.Twitter;
 
 /**
  * @author Siva
- *
  */
 @SpringBootApplication
 public class SpringbootTwitter4jDemoApplication implements CommandLineRunner {

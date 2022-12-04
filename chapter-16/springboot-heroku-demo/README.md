@@ -2,7 +2,8 @@
 
 ### Chapter 16 : Deploying SpringBoot Applications
 
-**springboot-heroku-demo**: This module demonstrates running SpringBoot application on Heroku platform and using Docker as well.
+**springboot-heroku-demo**: This module demonstrates running SpringBoot application on Heroku platform and using Docker
+as well.
 
 #### How to run locally?
 
@@ -22,28 +23,25 @@ Build the docker image using Maven
 
 springboot-heroku-demo> mvn clean package docker:build
 
-
 ### Running Postgres and Application containers individually
-
 
 *Run Postgres :*
 
 docker run --name demo-postgres \
-            -e POSTGRES_DB=demodb \
-            -e POSTGRES_USER=postgres \
-            -e POSTGRES_PASSWORD=secret123 \
-            -d postgres
+-e POSTGRES_DB=demodb \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=secret123 \
+-d postgres
 
 *Run application linking to demo-postgres container:*
 
 docker run -d \
-            --name springboot-heroku-demo \
-            --link demo-postgres:postgres \
-            -p 80:8080 \
-            sivaprasadreddy/springboot-heroku-demo
+--name springboot-heroku-demo \
+--link demo-postgres:postgres \
+-p 80:8080 \
+sivaprasadreddy/springboot-heroku-demo
 
 ### Running Postgres and Application using docker-compose
-
 
 Navigate to the directory where docker-compose.yml file is there.
 

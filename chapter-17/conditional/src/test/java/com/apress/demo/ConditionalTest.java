@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * @author Siva
- *
  */
 @ContextConfiguration(classes = AppConfig.class)
 @ExtendWith(SpringExtension.class)

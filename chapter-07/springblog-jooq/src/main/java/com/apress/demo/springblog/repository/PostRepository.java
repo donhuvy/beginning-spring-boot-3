@@ -1,6 +1,5 @@
 package com.apress.demo.springblog.repository;
 
-import com.apress.demo.jooq.domain.tables.records.PostsRecord;
 import com.apress.demo.springblog.domain.Post;
 import lombok.RequiredArgsConstructor;
 import org.jooq.DSLContext;

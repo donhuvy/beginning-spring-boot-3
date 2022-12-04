@@ -18,7 +18,6 @@ import static org.springframework.util.StringUtils.isEmpty;
 
 /**
  * @author Siva
- *
  */
 @Configuration
 @ConditionalOnClass({TwitterFactory.class, Twitter.class})

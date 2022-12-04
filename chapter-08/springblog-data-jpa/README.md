@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 08 : Working with JPA
 
 **springblog-data-jpa**: This module is a SpringBoot application demonstrating how to use data-jpa starter.

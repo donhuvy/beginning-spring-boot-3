@@ -2,9 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>SpringBoot Heroku Example</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -14,14 +14,14 @@
         <div class="col-sm-12">
             <table class="table table-striped">
                 <thead>
-                    <tr>
-                        <th>List of Users</th>
-                    </tr>
+                <tr>
+                    <th>List of Users</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="user : ${users}">
-                        <td th:text="${user.name}">user name</td>
-                    </tr>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.name}">user name</td>
+                </tr>
                 </tbody>
             </table>
         </div>

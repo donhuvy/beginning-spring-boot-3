@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo;
 
@@ -11,14 +11,12 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @author Siva
  *
  */
-public class MongoDBDatabaseTypeCondition implements Condition
-{
+public class MongoDBDatabaseTypeCondition implements Condition {
 
-	@Override
-	public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata)
-	{
-		String enabledDBType = System.getProperty("dbType","MYSQL");
-		return (enabledDBType != null && enabledDBType.equalsIgnoreCase("MONGODB"));
-	}
-	
+    @Override
+    public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata) {
+        String enabledDBType = System.getProperty("dbType", "MYSQL");
+        return (enabledDBType != null && enabledDBType.equalsIgnoreCase("MONGODB"));
+    }
+
 }

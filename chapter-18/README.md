@@ -1,14 +1,13 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 18 : Creating Custom SpringBoot Starter
 
 **twitter4j-spring-boot-autoconfigure** : Module which contains Twitter4J AutoConfiguration bean definitions
 
-**twitter4j-spring-boot-starter**: Module which pulls in *twitter4j-spring-boot-autoconfigure* and *twitter4j-core* dependencies
+**twitter4j-spring-boot-starter**: Module which pulls in *twitter4j-spring-boot-autoconfigure* and *twitter4j-core*
+dependencies
 
 **twitter4j-spring-boot-sample**: Sample SpringBoot application which uses twitter4j-spring-boot-starter
-
 
 #### How to run?
 

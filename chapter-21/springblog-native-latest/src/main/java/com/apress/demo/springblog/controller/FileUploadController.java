@@ -1,4 +1,3 @@
-
 package com.apress.demo.springblog.controller;
 
 import org.springframework.stereotype.Controller;

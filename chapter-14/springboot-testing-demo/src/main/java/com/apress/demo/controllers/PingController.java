@@ -5,14 +5,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Siva
- *
  */
 @RestController
-public class PingController
-{
-	@RequestMapping("/ping")
-	public String ping()
-	{
-		return "OK";
-	}
+public class PingController {
+    @RequestMapping("/ping")
+    public String ping() {
+        return "OK";
+    }
 }

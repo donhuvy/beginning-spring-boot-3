@@ -5,16 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Siva
- *
  */
 
 @SpringBootApplication
-public class SpringbootTestingDemoApplication
-{
+public class SpringbootTestingDemoApplication {
 
-	public static void main(String[] args)
-	{
-		SpringApplication.run(SpringbootTestingDemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootTestingDemoApplication.class, args);
+    }
 
 }

@@ -2,9 +2,10 @@ package com.apress.demo.springblog.validation;
 
 import com.apress.demo.springblog.domain.Post;
 import com.apress.demo.springblog.service.PostService;
+import org.thymeleaf.util.StringUtils;
+
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import org.thymeleaf.util.StringUtils;
 
 public record BlogPostTitleValidator(
         PostService postService) implements ConstraintValidator<BlogPostTitleAlreadyExists, Post> {

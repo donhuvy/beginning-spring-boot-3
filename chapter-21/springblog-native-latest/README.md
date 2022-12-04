@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 21 : Spring Native
 
 **springblog-native-latest**: This module demonstrates Spring Native features without explicit Spring Native Dependency.

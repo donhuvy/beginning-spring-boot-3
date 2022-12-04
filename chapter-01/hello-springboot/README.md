@@ -1,9 +1,8 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 01 : Introduction to SpringBoot
 
-**hello-springboot**: This module is a SpringBoot based web application using SpringMVC and Spring Data JPA 
+**hello-springboot**: This module is a SpringBoot based web application using SpringMVC and Spring Data JPA
 
 #### How to run?
 

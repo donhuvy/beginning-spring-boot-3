@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 @SpringBootApplication
 class SpringbootGroovyDemoApplication {
 
-	static void main(String[] args) {
-		SpringApplication.run SpringbootGroovyDemoApplication, args
-	}
+    static void main(String[] args) {
+        SpringApplication.run SpringbootGroovyDemoApplication, args
+    }
 }

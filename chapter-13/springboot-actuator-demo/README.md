@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 13 : SpringBoot Actuator
 
 **springboot-actuator-demo**: This module demonstrates SpringBoot Actuator features.

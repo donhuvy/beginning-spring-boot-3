@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo;
 
@@ -11,19 +11,15 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @author Siva
  *
  */
-public class MongoDriverNotPresentsCondition implements Condition
-{
+public class MongoDriverNotPresentsCondition implements Condition {
 
-	@Override
-	public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata)
-	{
-		try
-		{
-			Class.forName("com.mongodb.Server");
-			return false;
-		} catch (ClassNotFoundException e)
-		{
-			return true;
-		}
-	}
+    @Override
+    public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata) {
+        try {
+            Class.forName("com.mongodb.Server");
+            return false;
+        } catch (ClassNotFoundException e) {
+            return true;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo.domain;
 
@@ -7,51 +7,42 @@ package com.apress.demo.domain;
  * @author Siva
  *
  */
-public class User
-{
-	private Integer id;
-	private String name;
-	private String email;
-	
-	public User()
-	{
-	}
+public class User {
+    private Integer id;
+    private String name;
+    private String email;
 
-	public User(Integer id, String name, String email)
-	{
-		this.id = id;
-		this.name = name;
-		this.email = email;
-	}
+    public User() {
+    }
 
-	public Integer getId()
-	{
-		return id;
-	}
+    public User(Integer id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
 
-	public void setId(Integer id)
-	{
-		this.id = id;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getName()
-	{
-		return name;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setName(String name)
-	{
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getEmail()
-	{
-		return email;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setEmail(String email)
-	{
-		this.email = email;
-	}
-	
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }

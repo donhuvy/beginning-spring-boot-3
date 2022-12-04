@@ -1,6 +1,7 @@
 # Apress Source Code
 
-This repository accompanies [*Beginning Spring Boot 3*](https://link.springer.com/book/10.1007/978-1-4842-8792-7) by K. Siva Prasad Reddy and Sai Upadhyayula (Apress, 2023).
+This repository accompanies [*Beginning Spring Boot 3*](https://link.springer.com/book/10.1007/978-1-4842-8792-7) by K.
+Siva Prasad Reddy and Sai Upadhyayula (Apress, 2023).
 
 [comment]: #cover
 ![Cover image](978-1-4842-8791-0.jpg)

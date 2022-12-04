@@ -1,6 +1,5 @@
-
 /**
- * 
+ *
  */
 package com.apress.demo.repositories;
 
@@ -21,23 +20,23 @@ import java.util.List;
 @Repository
 public class JdbcUserRepository {
 
-	private JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
-	@Autowired
-	public JdbcUserRepository(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
+    @Autowired
+    public JdbcUserRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
-	public List<User> findAll() {
-		return jdbcTemplate.query("select * from people", new RowMapper<User>() {
+    public List<User> findAll() {
+        return jdbcTemplate.query("select * from people", new RowMapper<User>() {
 
-			@Override
-			public User mapRow(ResultSet rs, int n) throws SQLException {
-				User u = new User();
-				u.setId(rs.getInt("id"));
-				u.setName(rs.getString("name"));
-				return u;
-			}
-		});
-	}
+            @Override
+            public User mapRow(ResultSet rs, int n) throws SQLException {
+                User u = new User();
+                u.setId(rs.getInt("id"));
+                u.setName(rs.getString("name"));
+                return u;
+            }
+        });
+    }
 }

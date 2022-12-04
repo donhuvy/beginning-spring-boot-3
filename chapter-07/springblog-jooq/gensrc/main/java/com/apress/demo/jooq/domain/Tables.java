@@ -11,7 +11,7 @@ import com.apress.demo.jooq.domain.tables.Posts;
 /**
  * Convenience access to all tables in PUBLIC.
  */
-@SuppressWarnings({ "all", "unchecked", "rawtypes" })
+@SuppressWarnings({"all", "unchecked", "rawtypes"})
 public class Tables {
 
     /**

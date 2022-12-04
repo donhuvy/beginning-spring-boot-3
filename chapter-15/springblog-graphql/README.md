@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 15 : GraphQL with Spring Boot
 
 **springblog-graphql**: This module demonstrates SpringBoot GraphQL features.

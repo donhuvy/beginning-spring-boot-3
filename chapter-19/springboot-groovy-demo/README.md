@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 19 : SpringBoot with Groovy, Scala, Kotlin
 
 **springboot-groovy-demo**: This module is a SpringBoot application using Groovy.

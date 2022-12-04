@@ -1,0 +1,8 @@
+**/target/
+**/.idea/
+**/*.class
+**/build/
+.idea
+/.idea/
+.idea/**
+

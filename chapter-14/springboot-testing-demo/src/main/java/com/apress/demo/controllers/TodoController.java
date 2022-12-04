@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo.controllers;
 
@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class TodoController {
 
-	@Autowired
-	TodoRepository todoRepository;
-	
-	@GetMapping("/todolist")
-	public String showTodos(Model model)
-	{
-		model.addAttribute("todos", todoRepository.findAll());
-		return "todos";
-	}
-	
+    @Autowired
+    TodoRepository todoRepository;
+
+    @GetMapping("/todolist")
+    public String showTodos(Model model) {
+        model.addAttribute("todos", todoRepository.findAll());
+        return "todos";
+    }
+
 }

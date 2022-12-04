@@ -8,7 +8,6 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 /**
  * @author Siva
- *
  */
 @ConfigurationProperties(prefix = Twitter4jProperties.TWITTER4J_PREFIX)
 public class Twitter4jProperties {

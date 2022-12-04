@@ -1,9 +1,9 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 03 : SpringBoot Essentials
 
-**springboot-essentials**: This module is a basic SpringBoot web application to show how to use Logging, ConfigurationProperties etc.
+**springboot-essentials**: This module is a basic SpringBoot web application to show how to use Logging,
+ConfigurationProperties etc.
 
 #### How to run?
 

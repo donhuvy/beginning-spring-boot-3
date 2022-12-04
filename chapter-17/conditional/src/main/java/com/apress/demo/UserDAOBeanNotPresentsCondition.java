@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo;
 
@@ -11,14 +11,12 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @author Siva
  *
  */
-public class UserDAOBeanNotPresentsCondition implements Condition
-{
+public class UserDAOBeanNotPresentsCondition implements Condition {
 
-	@Override
-	public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata)
-	{
-		UserDAO userDAO = conditionContext.getBeanFactory().getBean(UserDAO.class);
-		return (userDAO == null);		
-	}
+    @Override
+    public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata) {
+        UserDAO userDAO = conditionContext.getBeanFactory().getBean(UserDAO.class);
+        return (userDAO == null);
+    }
 
 }

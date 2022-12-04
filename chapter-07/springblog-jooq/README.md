@@ -1,6 +1,5 @@
 # Beginning SpringBoot 3
 
-
 ### Chapter 07 : Working with JOOQ
 
 **springblog-jooq**: This module is a SpringBoot application demonstrating how to use JOOQ starter.

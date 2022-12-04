@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class TomcatConfiguration
-{
+public class TomcatConfiguration {
     @Value("${server.port}")
     private int serverPort;
+
     @Bean
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
@@ -31,6 +31,7 @@ public class TomcatConfiguration
         tomcat.addAdditionalTomcatConnectors(initiateHttpConnector());
         return tomcat;
     }
+
     private Connector initiateHttpConnector() {
         Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
         connector.setScheme("http");

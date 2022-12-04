@@ -15,7 +15,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author Siva
- *
  */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class PingControllerTests {

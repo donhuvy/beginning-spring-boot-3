@@ -9,19 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Siva
- *
  */
 @RestController
-public class AdminRestController
-{
-	@Autowired
-	private UserService userService;
-	
-	@Secured("ROLE_ADMIN")
-	@DeleteMapping("/admin/users/{id}")
-	public void deleteUser(@PathVariable("id") Integer userId)
-	{
-		userService.deleteUser(userId);
-		System.err.println("User deleted");
-	}
+public class AdminRestController {
+    @Autowired
+    private UserService userService;
+
+    @Secured("ROLE_ADMIN")
+    @DeleteMapping("/admin/users/{id}")
+    public void deleteUser(@PathVariable("id") Integer userId) {
+        userService.deleteUser(userId);
+        System.err.println("User deleted");
+    }
 }

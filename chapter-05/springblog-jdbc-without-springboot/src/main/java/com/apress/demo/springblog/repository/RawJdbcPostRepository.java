@@ -3,15 +3,16 @@ package com.apress.demo.springblog.repository;
 import com.apress.demo.springblog.domain.Post;
 import com.apress.demo.springblog.domain.PostStatus;
 import lombok.RequiredArgsConstructor;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
@@ -30,7 +31,7 @@ public class RawJdbcPostRepository {
             statement.setString(1, id);
             resultSet = statement.executeQuery();
             Post post = null;
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 post = new Post(
                         resultSet.getInt("id"),
                         resultSet.getString("title"),
@@ -40,7 +41,7 @@ public class RawJdbcPostRepository {
                         PostStatus.valueOf(resultSet.getString("post_status")),
                         convertToLocalDate(resultSet.getDate("created_on")),
                         convertToLocalDate(resultSet.getDate("updated_on"))
-                        );
+                );
             }
             return Optional.of(post);
         } catch (SQLException e) {
@@ -49,17 +50,20 @@ public class RawJdbcPostRepository {
             if (resultSet != null) {
                 try {
                     resultSet.close();
-                } catch (SQLException e) {}
+                } catch (SQLException e) {
+                }
             }
             if (statement != null) {
                 try {
                     statement.close();
-                } catch (SQLException e) {}
+                } catch (SQLException e) {
+                }
             }
             if (connection != null) {
                 try {
                     connection.close();
-                } catch (SQLException e) {}
+                } catch (SQLException e) {
+                }
             }
         }
         return Optional.empty();

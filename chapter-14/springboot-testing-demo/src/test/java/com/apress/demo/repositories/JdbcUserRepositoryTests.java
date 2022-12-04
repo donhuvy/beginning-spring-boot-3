@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.apress.demo.repositories;
 
@@ -21,25 +21,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 @JdbcTest
 public class JdbcUserRepositoryTests {
 
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
-	private JdbcUserRepository userRepository;
+    private JdbcUserRepository userRepository;
 
-	@BeforeEach
-	public void init() {
-		userRepository = new JdbcUserRepository(jdbcTemplate);
+    @BeforeEach
+    public void init() {
+        userRepository = new JdbcUserRepository(jdbcTemplate);
 
-		jdbcTemplate.execute("create table people(id int, name varchar(100))");
-		jdbcTemplate.execute("insert into people(id, name) values(1, 'John')");
-		jdbcTemplate.execute("insert into people(id, name) values(2, 'Remo')");
-		jdbcTemplate.execute("insert into people(id, name) values(3, 'Dale')");
-	}
+        jdbcTemplate.execute("create table people(id int, name varchar(100))");
+        jdbcTemplate.execute("insert into people(id, name) values(1, 'John')");
+        jdbcTemplate.execute("insert into people(id, name) values(2, 'Remo')");
+        jdbcTemplate.execute("insert into people(id, name) values(3, 'Dale')");
+    }
 
-	@Test
-	public void testFindAllUsers() throws Exception {
-		List<User> users = userRepository.findAll();
-		assertThat(users.size()).isEqualTo(3);
-	}
+    @Test
+    public void testFindAllUsers() throws Exception {
+        List<User> users = userRepository.findAll();
+        assertThat(users.size()).isEqualTo(3);
+    }
 
 }
